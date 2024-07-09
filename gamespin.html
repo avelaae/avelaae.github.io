@@ -30,9 +30,11 @@
 
     <script>
         // Define the lists
-        const list1 = ["Action", "Adventure", "Card", "Fighting", "Horror", "Idle", "MMO", "Party", "Puzzle", "Racing", "RPG", "Sandbox", "Shooter", "Simulation", "Sports", "Strategy", "Trivia"];
-        const list2 = ["4x", "Action RPG", "Auto-battler", "Automation", "Base-building", "Beat-'em-up", "Bullet hell", "City Builder", "Collectathon", "Colony Builder", "Competitive", "CRPG", "Dance", "Extraction", "Farming", "Fishing", "First-person Shooter", "Gacha", "Guitar hero-like", "Hack n' Slash", "JRPG", "Life Simulation", "Looter Shooter", "Management", "Mecha", "Metroidvania", "MOBA", "Monster Tamer", "Open World", "Platformer", "Programming/Scripting", "Real-time Strategy", "Roguelike", "Roguelite", "Space", "Shoot-'em-up", "Soulslike", "Stealth", "Survival", "Tactical", "Third-person Shooter", "Tower Defense", "Turn-based", "VampireSurvivors-like", "Visual Novel", "Wave-based"];
-        const list3 = ["2D", "2.5D", "3D", "Isometric", "Side-scrolling", "Orthographic", "Over-the-shoulder", "First-person", "Third-person", "VR"];
+        const list1 = ["Action", "Adventure", "Board", "Card", "Casino", "Fighting", "Horror", "Idle", "MMO", "Party", "Puzzle", "Racing", "RPG", "Sandbox", "Shooter", "Simulation", "Sports", "Strategy", "Trivia"];
+const list2 = ["4X (Explore, Expand, Exploit, Exterminate)", "Action RPG", "Auto-battler", "Automation", "Base-building", "Beat 'em Up", "Bullet hell", "City Builder", "Clicker", "Collectathon", "Colony Builder", "Competitive", "CRPG", "Dance", "Dungeon Crawler", "Extraction", "Farming", "Fishing", "First-person Shooter", "Gacha", "Graphic Adventure", "Guitar hero-like", "Hack n' Slash", "Incremental", "Japanese RPG (JRPG)", "Life Simulation", "Looter Shooter", "Management", "Mecha", "Metroidvania", "MOBA (Multiplayer Online Battle Arena)", "Monster Tamer", "Open World", "Platformer", "Programming/Scripting", "Real-Time Strategy (RTS)", "Roguelike", "Roguelite", "Space", "Shoot-'em-up", "Soulslike", "Stealth", "Survival", "Tactical", "Tactical RPG", "Text Adventure", "Third-person Shooter", "Tower Defense", "Turn-Based Strategy (TBS)", "VampireSurvivors-like", "Visual Novel", "Wave-based", "Western RPG (WRPG)"];
+const list3 = ["2.5D Perspective", "2D Perspective", "3D Perspective", "First-Person Perspective (FPP)", "Fixed Camera Perspective", "Isometric Perspective", "Orthographic", "Over-the-Shoulder Perspective", "Side-Scrolling Perspective", "Third-Person Perspective (TPP)", "Top-Down Perspective", "VR Perspective"];
+const list4 = ["Anime", "Cartoon", "Cel-Shaded", "Comic Book", "Cyberpunk", "Fantasy", "Gothic", "Low Poly", "Minimalist", "Paper Craft", "Photorealistic", "Pixel Art", "Realistic", "Retro", "Steampunk", "Surreal", "Voxel Art", "Watercolor"];
+const list5 = ["Ambient", "Blues", "Chiptune", "Classical", "Dubstep", "Electronic", "Folk", "Hip-Hop", "Industrial", "Jazz", "Metal", "Orchestral", "Pop", "Punk", "Reggae", "Retro", "Rock", "Soundtrack/Cinematic", "Synthwave", "Trance", "World Music"];
 
         // Function to get a random item from a list
         function getRandomItem(list) {
@@ -45,9 +47,12 @@
             const item1 = getRandomItem(list1);
             const item2 = getRandomItem(list2);
             const item3 = getRandomItem(list3);
+            const item4 = getRandomItem(list4);
+            const item5 = getRandomItem(list5);
+
 
             // Display the result in the HTML
-            document.getElementById("result").innerHTML = `>: ${item1}, ${item2}, ${item3}`;
+            document.getElementById("result").innerHTML = `>: ${item1}, ${item2}, ${item3}, ${item4}, ${item5}`;
         }
     </script>
 </body>
