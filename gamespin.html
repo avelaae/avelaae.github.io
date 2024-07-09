@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indie Video Game Idea Generator</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,8 +16,16 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f0f0f0;
+			background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
         }
+			
+		h1 {
+  color: green;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
         .result {
             margin-top: 20px;
             padding: 10px;
@@ -22,10 +34,10 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .button {
-  background-color: #f4511e;
+  background-color: #8634eb;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 132px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -35,12 +47,18 @@
   text-decoration: none;
   cursor: pointer;
 }
+.button:hover {opacity: 1}
+
+p1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
     </style>
 </head>
 <body>
-    <h1>Click Generate, Win a Prize</h1>
-    <p>Genre, Sub-Genre, Perspective, Art Style, Music Style</p>
-    <button onclick="generateRandomItems()">Generate</button>
+    <h1>PRESS THE BUTTON</h1>
+    <button class="button" type="button" onclick="generateRandomItems()">Generate</button>
     <div class="result" id="result"></div>
 
     <script>
@@ -67,8 +85,9 @@ const list5 = ["Ambient", "Blues", "Chiptune", "Classical", "Dubstep", "Electron
 
 
             // Display the result in the HTML
-            document.getElementById("result").innerHTML = `>: ${item1}, ${item2}, ${item3}, ${item4}, ${item5}`;
+            document.getElementById("result").innerHTML = `${item1}, ${item2}, ${item3}, ${item4}, ${item5}`;
         }
     </script>
+	<p>Genre || Sub-Genre || Perspective || Art Style || Music Style</p>
 </body>
 </html>
